@@ -263,12 +263,12 @@ footer .info_item {
   align-items: baseline;
 }
 
-.footer_item {
+.footer_item:not(:last-child) {
   margin-right: 70px;
 }
 
 .footer_item:last-child {
-  margin: 0;
+  margin-left: auto;
 }
 
 footer .footer_text {
@@ -289,10 +289,6 @@ footer .social_link_icon use {
   fill: #fff;
 }
 
-.footer_item_mail {
-  width: 558px;
-}
-
 .footer_form {
   width: 100%;
 }
@@ -310,32 +306,45 @@ footer .social_link_icon use {
   margin-bottom: 20px;
 }
 
-.footer_form {
+.footer-form {
   display: flex;
-  width: 358px;
+  width: 570px;
+  gap: 12px;
 }
 
 .footer-input {
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 0 15px 16px;
-  background-color: #2f303a;
-  width: 100%;
+  background-color: transparent;
+  width: 358px;
+  color: var(--background-team-color);
+  transition: border var(--transition);
+}
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .footer-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   border-color: transparent;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
   border-radius: 3%;
   cursor: pointer;
   transition: var(--transition);
   transition-property: background-color;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
 }
 
 .footer-svg {
