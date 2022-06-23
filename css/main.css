@@ -228,6 +228,7 @@
 .modal {
   position: absolute;
   padding: 40px;
+  width: 528px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -324,6 +325,7 @@
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  margin-bottom: 15px;
 }
 
 .modal-textarea::placeholder {
